@@ -1,11 +1,17 @@
 {
   "name": "ppmp2",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A project for PPMP using Node.js and PHP",
+  "main": "server.js",  // The main entry point for your Node.js server (adjust if different)
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"  // Script to start your Node.js server
   },
   "dependencies": {
-    "sqlite3": "^5.0.2"
+    "express": "^4.17.1", 
+    "mysql": "^2.18.1", 
+    "dotenv": "^8.2.0"   
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
