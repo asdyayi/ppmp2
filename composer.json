@@ -1,0 +1,17 @@
+{
+  "name": "ppmp/php-app",
+  "description": "A PHP application using JawsDB",
+  "require": {
+    "php": ">=7.4",
+    "ext-pdo": "*",
+    "vlucas/phpdotenv": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public"
+  }
+}
