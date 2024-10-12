@@ -1,4 +1,8 @@
 <?php
+
+require 'vendor/autoload.php';  // Ensure Composer autoload is included
+include 'config.php';  // Include your MySQL connection config
+
 session_start();
 
 $servername = "localhost";
