@@ -2,9 +2,9 @@
   "name": "ppmp2",
   "version": "1.0.0",
   "description": "A project for PPMP using Node.js and PHP",
-  "main": "server.js",  // The main entry point for your Node.js server (adjust if different)
+  "main": "index.php",
   "scripts": {
-    "start": "node server.js"  // Script to start your Node.js server
+    "start": "script.js"\
   },
   "dependencies": {
     "express": "^4.17.1", 
