@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Sans";
+  src: url(CanvaSans.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(bold.ttf);
+}
+
+body {
+  background-color: #98B9D4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 31px;
+}
+
+.header h1 span {
+  margin-left: 60px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.nav {
+  background-color: white;
+  height: 100vh;
+  width: 230px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.nav a {
+  color: #153860;
+  text-decoration: none;
+  padding: 15px;
+  width: 100%;
+  margin-left: 40px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  font-family: 'Sans';
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #C6D3E3;
+  z-index: -1;
+  transition: width 0.3s ease;
+  border-radius: 25px;
+}
+
+.nav a:hover::before,
+.nav a.active::before {
+  width: 80%;
+}
+
+.nav a:hover {
+  background-color: transparent;
+}
+
+.nav a i {
+  margin-right: 10px;
+}
+
+.nav a.settings, .nav a.logout {
+  margin-top: 200px;
+  margin-bottom: -200px;
+  font-size: 18px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  width: 70px;
+  top: 10px;
+  z-index: 2;
+}
+
+#datetime {
+  position: absolute;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #153860;
+}
+
+/* New Logout Modal Styles */
+
+#logoutModal {
+  display: none;
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(21, 56, 96, 0.78);
+}
+
+#logoutModal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+#logoutModal .modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#logoutModal #yesBtn, #logoutModal #noBtn {
+  font-family: 'bold';
+  border-radius: 25px;
+  width: 100px;
+  background-color: #005990;
+  color: white;
+}
+
+#logoutModal #noBtn:hover, #logoutModal #yesBtn:hover {
+  background-color: #98B9D4;
+}
+
+/* Adjusted Active and Hover Styles */
+
+.nav a.active,
+.nav a:hover {
+  background-color: transparent;
+}
+
+.nav a.active::before,
+.nav a:hover::before {
+  width: 80%;
+}
