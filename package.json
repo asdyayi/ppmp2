@@ -1,12 +1,11 @@
 {
-    "name": "ppmp2",
-    "version": "1.0.0",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.17.1"
-    }
+  "name": "ppmp2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
   }
-  
+}
