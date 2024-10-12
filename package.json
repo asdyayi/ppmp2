@@ -4,7 +4,7 @@
   "description": "A project for PPMP using Node.js and PHP",
   "main": "index.php",
   "scripts": {
-    "start": "script.js"\
+    "start": "script.js"
   },
   "dependencies": {
     "express": "^4.17.1", 
